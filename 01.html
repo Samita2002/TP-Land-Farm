@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทีพี แลนด์ ฟาร์ม - TP Land Farm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-green-200">
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.jpg" alt="TP Land Farm Logo" class="logo">
+            <h1>ทีพีแลนด์ ฟาร์ม</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">TRAVEL</a></li>
+                <li><a href="#">ACTIVITY</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slide" style="background-image: url('assets/017.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/06.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/05.jpg');"></div>
+        <div class="hero-content">
+            <h2>ชมสวนผัก สัมผัสกับธรรมชาติ</h2>
+            <h3>ได้ตลอดทุกช่วงเวลา ทุกฤดูกาล ตลอดทั้งปี</h3>
+            <h3>ให้คุณถ่ายรูปเช็คอิน ได้ไม่มีเบื่อ</h3>
+        </div>
+        <div class="hero-controls">
+            <div class="arrows">
+                <a href="#" class="arrow-left">&lt;</a>
+                <a href="#" class="arrow-right">&gt;</a>
+            </div>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#" class="cta-button">VIEW MORE</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-white text-gray-800">
+        <div class="container mx-auto p-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2">
+                    <img alt="A lush green cornfield under a blue sky with some clouds" 
+                         class="w-full h-auto max-w-[600px] max-h-[500px]"
+                         src="https://storage.googleapis.com/a1aa/image/maEogvv2qfvyKsDvcp7NdgakxwqDCC0CovXe_aGDPTE.jpg" />
+                </div>
+                <div class="lg:w-1/2 lg:pl-8 mt-4 lg:mt-0">
+                    <h1 class="text-2xl lg:text-3xl font-bold text-green-800 mb-4">เกี่ยวกับ ทีพี แลนด์ ฟาร์ม</h1>
+                    <p class="mb-4">
+                        ทีพี แลนด์ ฟาร์ม เป็นฟาร์มเกษตรอินทรีย์ที่มุ่งเน้นการปลูกพืชผักปลอดสารพิษ ด้วยความใส่ใจในทุกๆขั้นตอนการผลิต เพื่อให้ได้ผลผลิตที่มีคุณภาพสูงสุด และปลอดภัยต่อผู้บริโภค
+                    </p>
+                    <p class="mb-4">
+                        เรามีประสบการณ์ในการทำเกษตรอินทรีย์มากกว่า  10 ปี และเป็นผู้นำเบิกในการนำเทคโนโลยีสมัยใหม่มาใช้ในการเกษตร เพื่อพัฒนาผลผลิตให้มีคุณภาพและเป็นมิตรกับสิ่งแวดล้อม
+                    </p>
+                    <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                        <h2 class="text-xl font-bold text-green-800 mb-2">วิสัยทัศน์</h2>
+                        <p>เราต้องการสร้างระบบเกษตรที่ยั่งยืนและเป็นมิตรกับสิ่งแวดล้อม เพื่อตอบการที่ปลอดภัยและมีคุณค่าทางโภชนาการสูง</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h2 class="text-xl font-bold text-green-800 mb-2">พันธกิจ</h2>
+                        <p>ส่งเสริมการทำเกษตรอินทรีย์และการบริโภคอาหารปลอดสารพิษ เพื่อสุขภาพที่ดีของผู้บริโภคและสิ่งแวดล้อมที่ยั่งยืน</p>
+                    </div>
+                    <a class="text-green-800 font-bold mt-4 inline-block" href="#">ดูข้อมูลเพิ่มเติมเกี่ยวกับเรา →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deer Section -->
+    <section class="deer deer-section">
+        <h2 class="section-title">Deer</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/tROq1mn2NrQ_j2NkjQUqvmtqknZRBvkDPbmSeW-00HA.jpg" alt="Group of deer standing on grass">
+                <h3>เพิ่มหัวเรื่องย่อย</h3>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/J91jbpoGPHQdafYePKGY_vYPjtISvFkPi8alTiGDx6E.jpg" alt="Single deer lying on grass">
+                <h3>เพิ่มหัวเรื่องย่อย</h3>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/qH4rzIxlne88jWMDjWp_qnzqBgWNPP-UNOn4ZWzGHTg.jpg" alt="Single deer standing in forest">
+                <h3>เพิ่มหัวเรื่องย่อย</h3>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <h1 class="section-title">ผลิตภัณฑ์จากฟาร์ม</h1>
+            <p class="section-subtitle">ผลิตภัณฑ์ออร์แกนิคคุณภาพสูง ปลูกด้วยความพิถีพิถัน</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://storage.googleapis.com/a1aa/image/XeazhXMRgatCwO64FF_8-M5KsSNUHSYoLtDjgwBUw38.jpg" alt="ผักกาดหอมออร์แกนิค" />
+                    <div class="card-content">
+                        <h2>ผักกาดหอมออร์แกนิค</h2>
+                        <p>ผักกาดหอมสดปลูกแบบออร์แกนิค ไร้สารเคมี</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://storage.googleapis.com/a1aa/image/Rk9AoDABeV0Qs_R5_FvtCGfTrWSdTAfP2UNyOnvU7rY.jpg" alt="ไมโครกรีน รวมชนิด" />
+                    <div class="card-content">
+                        <h2>ไมโครกรีน รวมชนิด</h2>
+                        <p>ไมโครกรีนรวมหลายชนิด อุดมไปด้วยวิตามินและแร่ธาตุ</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://storage.googleapis.com/a1aa/image/6NxQSdvyEJXKWCcEFIHkfigXhZr3Tc_eUBXQ4IpuY EM.jpg" alt="เมล็ดพันธุ์ผักออร์แกนิค" />
+                    <div class="card-content">
+                        <h2>เมล็ดพันธุ์ผักออร์แกนิค</h2>
+                        <p>เมล็ดพันธุ์ผักสำหรับปลูกเองที่บ้าน รับรองคุณภาพ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button>สวนผัก</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Durian and Strawberry Section -->
+    <section class="fruit-section">
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/tI1galD1QOrZm-sgIYXYPWzl5c64pOaSqYwn1875Y0I.jpg" alt="Durian fruit hanging on a tree" width="300" height="300">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/oVSYcnEJi_6YFpzedT82lil-OpHStuLuEjUjWhF4eQ0.jpg" alt="Durian buds on a tree" width="300" height="300">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/hq4t2XtRlZxpkTszm5vZmMupsdEbk-rkbGW_7RjzzgY.jpg" alt="Durian fruit on a tree" width="300" height="300">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/hFM6k2C8dNza_RcEeUOTl6Zdn1q4Z7pCMoWcTYBocNE.jpg" alt="Strawberry farm with hanging strawberries" width="300" height="300">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/SncSSzSpZ8CLxDVqh9r6smR50u0LJw6HOTRBEbl2bTo.jpg" alt="Strawberry farm with strawberries growing on raised beds" width="300" height="300">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/sOu-bUarVAFgRJF7EnOIUNGUetPCjtRH89XGM49d5DY.jpg" alt="Close-up of ripe strawberries" width="300" height="300">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garden Section -->
+    <section class="garden-section">
+        <div class="container">
+            <h1 class="section-title">สวนผัก</h1>
+            <div class="content-grid">
+                <div class="image-grid">
+                    <img alt="A woman standing in a field of yellow flowers" src="https://storage.googleapis.com/a1aa/image/kiDpbe5sGJK9Tqb2LY4DVzEprjn4uDn32kFVLTvgA-o.jpg" />
+                    <img alt="A beautiful garden with various colorful flowers" src="https://storage.googleapis.com/a1aa/image/tEHprGIndktCQ2dfKEttcUkFXdBd0pkMtsJLNrZzTqI.jpg" />
+                    <img alt="A heart-shaped archway covered in flowers with people walking through" src="https://storage.googleapis.com/a1aa/image/v1LRpIeeVY_pLW_7mgKJjp3F_DvjvoMwAFeBffS6v1c.jpg" />
+                    <img alt="A close-up of green leafy vegetables growing in a garden " src="https://storage.googleapis.com/a1aa/image/jyT-R0K9L2lDgfdtzBGfWFG58fxC36Gn0-S7h9i0VAA.jpg" />
+                    <img alt="Hydroponic vegetables growing in a controlled environment" src="https://storage.googleapis.com/a1aa/image/hAtqcTjaltLP5QDCgUmCl5wqEIloSfnfsmAyLZUj_Ek.jpg" />
+                    <img alt="A person watering plants in a garden" src="https://storage.googleapis.com/a1aa/image/c9Vv8qR0QdhcPtUQ5TN1P1GLO7gBHaHEbe4qzIdfMBU.jpg" />
+                </div>
+                <div class="text-column">
+                    <p class="description">เพิ่มข้อความในส่วนเนื้อหาเล็กน้อย</p>
+                    <img alt="A greenhouse in a garden with various plants growing around it" src="https://storage.googleapis.com/a1aa/image/7H-ojWpHVKR5RvtSpM5MrrkRADZLI1stq5ig6xftmMs.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fish Section -->
+    <section class="fish-section">
+        <div class="header">
+            <h1>ปลา</h1>
+        </div>
+        <div class="fish-container">
+            <div class="fish-card">
+                <img src="https://storage.googleapis.com/a1aa/image/o6JVx-QUbPX0YDDofYUZJ8s_fcpEF2LhwdtAcjrw7O8.jpg" alt="A group of fish swimming in water" width="300" height="400" />
+                <div class="card-text">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+            </div>
+
+            <div class="fish-card">
+                <img src="https://storage.googleapis.com/a1aa/image/5Mk-BRFFn0oDSFzaPHwDTVumH-9DKsF_Fk96IlBzqCM.jpg" alt="People fishing in a river with nets" width="300" height="400" />
+                <div class="card-text">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+            </div>
+
+            <div class="fish-card">
+                <img src="https://storage.googleapis.com/a1aa/image/Ugg_d7NSlNiQ7NH2rCMqH-vtP-o6ruXxcWuZwxgVD1U.jpg" alt="Fish swimming in water" width="300" height="400" />
+                <div class="card-text">
+                    <h2>เพิ่มหัวเรื่องย่อย</h2>
+                    <p>ส่วนเนื้อหาเล็กน้อย</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Content -->
+    <section class="section-atmosphere">
+        <div class="section-header">
+            <h1>บรรยากาศ</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/71WpGEFTMizOZ6LuWeSxarPCCrU_FzPXyCVMBgeS5_k.jpg" alt="Aerial view of a river surrounded by greenery" width="300" height="200">
+                <h2>User research</h2>
+                <p>Further elaborate on the skill or offered service</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/Wug92-C8AEBHtMXLbm9St-69Ux1_xw8yrcYlERH_3z8.jpg" alt="A scenic view of a park with a pond" width="300" height="200">
+                <h2>Interaction design</h2>
+                <p>Further elaborate on the skill or offered service</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/X0Qp78a6Gut8h_1FH-IkHy76VO7189LxcqKp9SbXim8.jpg" alt="A field of crops with sunlight" width="300" height="200">
+                <h2>Visual design</h2>
+                <p>Further elaborate on the skill or offered service </p>
+            </div>
+        </div>
+
+        <!-- Contact and Social Section -->
+        <div class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h2>สถานที่ตั้ง</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> 46 หมู่ที่ 9 ตำบลสถาน อำเภอนาน้อย จ.น่าน 55150</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Contact US</h2>
+                    <p>บริษัท ทีพีแลนด์ ฟาร์ม จำกัด</p>
+                    <p>Email : aaa@gmail.com</p>
+                    <p>Tel : 09-9999-9999</p>
+                </div>
+                <div class="contact-item">
+                    <h2>OUR SOCIALS</h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© COPYRIGHT 2025 TP LAND FARM CO., LTD.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
