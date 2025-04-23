@@ -47,9 +47,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
     font-size: 2.5rem;
+    background-color: #fff;
     color: var(--dark-text);
     text-align: center;
     padding: 2rem 0;
+    
 }
 
 /* Layout */
@@ -105,8 +107,7 @@ nav ul li {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 80vh;
-    background-image: url('https://placehold.co/1600x900/669933/ffffff?text=Farm+Background');
+    height: 88vh;
     background-size: cover;
     background-position: center;
     color: var(--light-text);
@@ -229,9 +230,13 @@ nav ul li {
     color: var(--light-text);
 }
 
-/* Category Grid */
+/* Deer*/
+.deer-section {
+    background-color: #ffffff; /* Change this to your desired color */
+}
 .category-grid {
     display: grid;
+    background-color: #fff;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem;
@@ -415,6 +420,7 @@ nav ul li {
 /* ผลิตภัณฑ์จากฟาร์ม */
 .product-section {
     padding: 2rem;
+    background-color: #ffffff;
 }
 
 .container {
@@ -458,7 +464,7 @@ nav ul li {
 
 .product-card img {
     width: 100%;
-    height: 12rem;
+    height: 20rem; /* ปรับความสูงของรูปภาพที่นี่ */
     object-fit: cover;
 }
 
@@ -493,6 +499,7 @@ nav ul li {
 
 /* Durian */
 .fruit-section {
+    
     background-color: #ffffff; 
     padding: 4rem 0;
 }
@@ -501,6 +508,7 @@ nav ul li {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    justify-items: center;
 }
 
 @media (min-width: 768px) {
@@ -530,7 +538,7 @@ nav ul li {
 
 /* สวนผัก */
 .garden-section {
-    background-color: #5f8d4e; 
+    background-color: #ffffff; 
     padding: 1rem;
 }
 
@@ -585,11 +593,10 @@ nav ul li {
 /* ปลา */
 .fish-section {
     padding: 4rem 0;
-    background-color: #f5f1e6;
+    background-color: #ffffff;
 }
 
 .header {
-    background-color: #6b7d3b;
     text-align: center;
     padding: 1rem;
 }

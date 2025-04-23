@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
-<body class="bg-green-200">
+<body class="..">
 
     <!-- Header -->
     <header>
@@ -25,7 +25,7 @@
                 <li><a href="#">ACTIVITY</a></li>
                 <li><a href="#">STORE</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="login.php">LOGIN</a></li>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
                 <li><a href="#"><i class="fas fa-bars"></i></a></li>
                 <li><a href="#"><i class="fas fa-home"></i></a></li>
@@ -59,36 +59,35 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="bg-white text-gray-800">
-        <div class="container mx-auto p-4">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2">
-                    <img alt="A lush green cornfield under a blue sky with some clouds" 
-                         class="w-full h-auto max-w-[600px] max-h-[500px]"
-                         src="https://storage.googleapis.com/a1aa/image/maEogvv2qfvyKsDvcp7NdgakxwqDCC0CovXe_aGDPTE.jpg" />
+<!-- About Section -->
+<section class="bg-white text-gray-800 mt-11"> <!-- เพิ่ม mt-4 ที่นี่ -->
+    <div class="container mx-auto p-5">
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2">
+                <img alt="A lush green cornfield under a blue sky with some clouds" 
+                     class="w-full h-auto max-w-[600px] max-h-[500px]"
+                     src="https://storage.googleapis.com/a1aa/image/maEogvv2qfvyKsDvcp7NdgakxwqDCC0CovXe_aGDPTE.jpg" />
+            </div>
+            <div class="lg:w-1/2 lg:pl-8 mt-4 lg:mt-0">
+                <h1 class="text-2xl lg:text-3xl font-bold text-green-800 mb-4">เกี่ยวกับ ทีพี แลนด์ ฟาร์ม</h1>
+                <p class="mb-4">
+                    ทีพี แลนด์ ฟาร์ม เป็นฟาร์มเกษตรอินทรีย์ที่มุ่งเน้นการปลูกพืชผักปลอดสารพิษ ด้วยความใส่ใจในทุกๆขั้นตอนการผลิต เพื่อให้ได้ผลผลิตที่มีคุณภาพสูงสุด และปลอดภัยต่อผู้บริโภค
+                </p>
+                <p class="mb-4">
+                    เรามีประสบการณ์ในการทำเกษตรอินทรีย์มากกว่า  10 ปี และเป็นผู้นำเบิกในการนำเทคโนโลยีสมัยใหม่มาใช้ในการเกษตร เพื่อพัฒนาผลผลิตให้มีคุณภาพและเป็นมิตรกับสิ่งแวดล้อม
+                </p>
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <h2 class="text-xl font-bold text-green-800 mb-2">วิสัยทัศน์</h2>
+                    <p>เราต้องการสร้างระบบเกษตรที่ยั่งยืนและเป็นมิตรกับสิ่งแวดล้อม เพื่อตอบการที่ปลอดภัยและมีคุณค่าทางโภชนาการสูง</p>
                 </div>
-                <div class="lg:w-1/2 lg:pl-8 mt-4 lg:mt-0">
-                    <h1 class="text-2xl lg:text-3xl font-bold text-green-800 mb-4">เกี่ยวกับ ทีพี แลนด์ ฟาร์ม</h1>
-                    <p class="mb-4">
-                        ทีพี แลนด์ ฟาร์ม เป็นฟาร์มเกษตรอินทรีย์ที่มุ่งเน้นการปลูกพืชผักปลอดสารพิษ ด้วยความใส่ใจในทุกๆขั้นตอนการผลิต เพื่อให้ได้ผลผลิตที่มีคุณภาพสูงสุด และปลอดภัยต่อผู้บริโภค
-                    </p>
-                    <p class="mb-4">
-                        เรามีประสบการณ์ในการทำเกษตรอินทรีย์มากกว่า  10 ปี และเป็นผู้นำเบิกในการนำเทคโนโลยีสมัยใหม่มาใช้ในการเกษตร เพื่อพัฒนาผลผลิตให้มีคุณภาพและเป็นมิตรกับสิ่งแวดล้อม
-                    </p>
-                    <div class="bg-gray-100 p-4 rounded-lg mb-4">
-                        <h2 class="text-xl font-bold text-green-800 mb-2">วิสัยทัศน์</h2>
-                        <p>เราต้องการสร้างระบบเกษตรที่ยั่งยืนและเป็นมิตรกับสิ่งแวดล้อม เพื่อตอบการที่ปลอดภัยและมีคุณค่าทางโภชนาการสูง</p>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <h2 class="text-xl font-bold text-green-800 mb-2">พันธกิจ</h2>
-                        <p>ส่งเสริมการทำเกษตรอินทรีย์และการบริโภคอาหารปลอดสารพิษ เพื่อสุขภาพที่ดีของผู้บริโภคและสิ่งแวดล้อมที่ยั่งยืน</p>
-                    </div>
-                    <a class="text-green-800 font-bold mt-4 inline-block" href="#">ดูข้อมูลเพิ่มเติมเกี่ยวกับเรา →</a>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h2 class="text-xl font-bold text-green-800 mb-2">พันธกิจ</h2>
+                    <p>ส่งเสริมการทำเกษตรอินทรีย์และการบริโภคอาหารปลอดสารพิษ เพื่อสุขภาพที่ดีของผู้บริโภคและสิ่งแวดล้อมที่ยั่งยืน</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Deer Section -->
     <section class="deer deer-section">
@@ -140,49 +139,47 @@
                     </div>
                 </div>
             </div>
-            <div class="button-container">
-                <button>สวนผัก</button>
-            </div>
+          
         </div>
     </section>
 
-    <!-- Durian and Strawberry Section -->
-    <section class="fruit-section">
-        <div class="container">
-            <div class="grid">
-                <div class="card">
-                    <img src="https://storage.googleapis.com/a1aa/image/tI1galD1QOrZm-sgIYXYPWzl5c64pOaSqYwn1875Y0I.jpg" alt="Durian fruit hanging on a tree" width="300" height="300">
-                    <h2>เพิ่มหัวเรื่องย่อย</h2>
-                    <p>ส่วนเนื้อหาเล็กน้อย</p>
-                </div>
-                <div class="card">
-                    <img src="https://storage.googleapis.com/a1aa/image/oVSYcnEJi_6YFpzedT82lil-OpHStuLuEjUjWhF4eQ0.jpg" alt="Durian buds on a tree" width="300" height="300">
-                    <h2>เพิ่มหัวเรื่องย่อย</h2>
-                    <p>ส่วนเนื้อหาเล็กน้อย</p>
-                </div>
-                <div class="card">
-                    <img src="https://storage.googleapis.com/a1aa/image/hq4t2XtRlZxpkTszm5vZmMupsdEbk-rkbGW_7RjzzgY.jpg" alt="Durian fruit on a tree" width="300" height="300">
-                    <h2>เพิ่มหัวเรื่องย่อย</h2>
-                    <p>ส่วนเนื้อหาเล็กน้อย</p>
-                </div>
-                <div class="card">
-                    <img src="https://storage.googleapis.com/a1aa/image/hFM6k2C8dNza_RcEeUOTl6Zdn1q4Z7pCMoWcTYBocNE.jpg" alt="Strawberry farm with hanging strawberries" width="300" height="300">
-                    <h2>เพิ่มหัวเรื่องย่อย</h2>
-                    <p>ส่วนเนื้อหาเล็กน้อย</p>
-                </div>
-                <div class="card">
-                    <img src="https://storage.googleapis.com/a1aa/image/SncSSzSpZ8CLxDVqh9r6smR50u0LJw6HOTRBEbl2bTo.jpg" alt="Strawberry farm with strawberries growing on raised beds" width="300" height="300">
-                    <h2>เพิ่มหัวเรื่องย่อย</h2>
-                    <p>ส่วนเนื้อหาเล็กน้อย</p>
-                </div>
-                <div class="card">
-                    <img src="https://storage.googleapis.com/a1aa/image/sOu-bUarVAFgRJF7EnOIUNGUetPCjtRH89XGM49d5DY.jpg" alt="Close-up of ripe strawberries" width="300" height="300">
-                    <h2>เพิ่มหัวเรื่องย่อย</h2>
-                    <p>ส่วนเนื้อหาเล็กน้อย</p>
-                </div>
+ <!-- Durian and Strawberry Section -->
+<section class="fruit-section">
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/tI1galD1QOrZm-sgIYXYPWzl5c64pOaSqYwn1875Y0I.jpg" alt="Durian fruit hanging on a tree" width="300" height="300">
+                <h2>เพิ่มหัวเรื่องย่อย</h2>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/oVSYcnEJi_6YFpzedT82lil-OpHStuLuEjUjWhF4eQ0.jpg" alt="Durian buds on a tree" width="300" height="300">
+                <h2>เพิ่มหัวเรื่องย่อย</h2>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/hq4t2XtRlZxpkTszm5vZmMupsdEbk-rkbGW_7RjzzgY.jpg" alt="Durian fruit on a tree" width="300" height="300">
+                <h2>เพิ่มหัวเรื่องย่อย</h2>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/hFM6k2C8dNza_RcEeUOTl6Zdn1q4Z7pCMoWcTYBocNE.jpg" alt="Strawberry farm with hanging strawberries" width="300" height="300">
+                <h2>เพิ่มหัวเรื่องย่อย</h2>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/SncSSzSpZ8CLxDVqh9r6smR50u0LJw6HOTRBEbl2bTo.jpg" alt="Strawberry farm with strawberries growing on raised beds" width="300" height="300">
+                <h2>เพิ่มหัวเรื่องย่อย</h2>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/a1aa/image/sOu-bUarVAFgRJF7EnOIUNGUetPCjtRH89XGM49d5DY.jpg" alt="Close-up of ripe strawberries" width="300" height="300">
+                <h2>เพิ่มหัวเรื่องย่อย</h2>
+                <p>ส่วนเนื้อหาเล็กน้อย</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Garden Section -->
     <section class="garden-section">
