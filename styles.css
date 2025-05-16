@@ -660,7 +660,8 @@ nav ul li {
     background-color: #d3e0b7;
     padding: 1rem;
     text-align: center;
-     object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .fish-card img {
