@@ -831,3 +831,13 @@ nav ul li {
     transform: scale(1.03);
 }
 
+.tilt-effect {
+    will-change: transform;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.tilt-effect:hover {
+    transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
+}
+
