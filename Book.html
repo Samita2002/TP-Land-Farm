@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>จองกิจกรรมฟาร์ม</title>
+  <link rel="stylesheet" href="Book.css" />
+</head>
+<body>
+  <section id="booking-form" class="form-section">
+    <div class="container">
+      <h2 class="title">จองกิจกรรมฟาร์ม</h2>
+      <p class="subtitle">เลือกวันและเวลาที่ต้องการมาเยือนฟาร์มของเรา</p>
+
+      <form id="bookingForm" class="card">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">ชื่อ *</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">นามสกุล *</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">อีเมล *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">เบอร์โทรศัพท์ *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="activity">กิจกรรม *</label>
+            <select id="activity" name="activity" required>
+              <option value="">เลือกกิจกรรม</option>
+              <option value="1">เก็บผักออร์แกนิค</option>
+              <option value="2">ให้อาหารสัตว์</option>
+              <option value="3">ทำอาหารจากสวน</option>
+              <option value="4">ทัวร์เรียนรู้</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingDate">วันที่ *</label>
+            <input type="date" id="bookingDate" name="bookingDate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="participants">จำนวนผู้เข้าร่วม *</label>
+            <select id="participants" name="participants" required>
+              <option value="">เลือกจำนวนคน</option>
+              <option value="1">1 คน</option>
+              <option value="2">2 คน</option>
+              <option value="3">3 คน</option>
+              <option value="4">4 คน</option>
+              <option value="5">5 คน</option>
+              <option value="6">6+ คน</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="message">ข้อความเพิ่มเติม</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="submit-btn">ส่งการจอง</button>
+
+          <a
+            href="https://line.me/R/ti/p/@yourlineid"
+            target="_blank"
+            rel="noopener"
+            class="line-btn"
+          >
+            จองผ่านไลน์
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </section>
+</body>
+</html>
