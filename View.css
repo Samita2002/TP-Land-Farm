@@ -1,8 +1,7 @@
-/* style.css */
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: #afcb7c;
+  background-color: #dbd4d4;
 }
 
 .section-padding {
@@ -36,7 +35,6 @@ body {
   margin: auto;
 }
 
-/* Tips Cards */
 .tips-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -91,24 +89,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.read-more {
-  display: inline-flex;
-  align-items: center;
-  color: #8cbf9f;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.read-more:hover {
-  color: #22543d;
-}
-
-.read-more svg {
-  margin-left: 5px;
-}
-
-/* Activities Grid */
 .grid-activities {
   display: grid;
   grid-template-columns: 1fr;
@@ -159,7 +139,6 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Harvesting Section */
 .harvest-section {
   background: linear-gradient(to right, #a3b18a, #2d6a4f);
   border-radius: 1rem;

@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>เคล็ดลับและกิจกรรมการทำฟาร์ม</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="View.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <!-- เคล็ดลับการทำฟาร์ม -->
@@ -48,10 +49,33 @@
             </ul>
           </div>
           <div class="harvest-image">
-            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="การเก็บเกี่ยว">
+            <img src="backup/013.jpg" alt="การเก็บเกี่ยว">
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- แนวโน้มเกษตรอินทรีย์ -->
+  <section id="trends" class="section-padding">
+    <div class="container-custom">
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="section-title">แนวโน้มเกษตรอินทรีย์</h2>
+          <p class="section-subtitle">
+            เกษตรอินทรีย์กำลังเติบโตอย่างรวดเร็วทั่วโลก ด้วยความต้องการอาหารปลอดภัยและการรักษาสิ่งแวดล้อม
+          </p>
+          <div class="space-y-4" id="trendFeatures"></div>
+        </div>
+        <div>
+          <img
+            src="backup/014.jpg"
+            alt="วิธีการเกษตรยั่งยืน"
+            class="rounded-xl shadow-lg w-full h-auto"
+          />
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="trendCards"></div>
     </div>
   </section>
 
