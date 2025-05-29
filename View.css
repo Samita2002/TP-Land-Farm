@@ -1,0 +1,221 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #afcb7c;
+}
+
+.section-padding {
+  padding: 60px 20px;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #2d6a4f;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Tips Cards */
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tips-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.icon-box {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.bg-sage { background-color: #8cbf9f; }
+.bg-sandy { background-color: #e0b084; }
+.bg-forest { background-color: #22543d; }
+.bg-saddle { background-color: #8b5e3c; }
+
+.card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #22543d;
+  margin-bottom: 0.75rem;
+}
+
+.card-desc {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  color: #8cbf9f;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #22543d;
+}
+
+.read-more svg {
+  margin-left: 5px;
+}
+
+/* Activities Grid */
+.grid-activities {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .grid-activities {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #2d6a4f;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.card-content ul {
+  padding: 0;
+  list-style: none;
+  color: #4b5563;
+}
+
+.card-content li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-content .check-icon {
+  color: #a3b18a;
+  margin-right: 0.5rem;
+}
+
+/* Harvesting Section */
+.harvest-section {
+  background: linear-gradient(to right, #a3b18a, #2d6a4f);
+  border-radius: 1rem;
+  color: white;
+  margin-top: 4rem;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.harvest-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .harvest-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.harvest-text {
+  padding: 3rem;
+}
+
+.harvest-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.harvest-text p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.harvest-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.harvest-text li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.harvest-text .check-icon {
+  color: #fef9c3;
+  margin-right: 0.75rem;
+  font-weight: bold;
+}
+
+.harvest-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
