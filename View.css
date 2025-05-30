@@ -332,3 +332,18 @@ nav ul {
     display: flex;
   }
 }
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #127410; /* green-700 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #276397; /* green-400 */
+}
+
