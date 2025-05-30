@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const dots = document.querySelectorAll('.dot');
     const leftArrow = document.querySelector('.arrow-left');
     const rightArrow = document.querySelector('.arrow-right');
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const icon = toggleBtn.querySelector('i');
     let currentIndex = 0;
     let slideInterval;
 
@@ -56,4 +59,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showSlide(currentIndex);
     startAutoSlide();
+
+toggleBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-times');
 });
+
+});
+
+

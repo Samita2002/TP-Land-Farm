@@ -1,33 +1,36 @@
 /* Base Styles and Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans Thai', 'Kanit', sans-serif;
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
 }
 
 body {
-    line-height: 1.6;
-    color: #333;
-    overflow-x: hidden;
-    background: url(b002.png);
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  background: #f6f6f6;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* Colors */
@@ -40,71 +43,6 @@ img {
     --light-text: #ffffff;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    background-color: #ffffff00;
-    color: var(--dark-text);
-    text-align: center;
-    padding: 2rem 0;
-    
-}
-
-/* Layout */
-.yellow-bg {
-    background-color: var(--light-yellow);
-}
-
-.green-bg {
-    background-color: var(--light-green);
-}
-
-.split-bg {
-    background: linear-gradient(to right, var(--light-green) 50%, var(--light-yellow) 50%);
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--dark-green);
-    color: var(--light-text);
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-header h1 {
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-nav ul {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-nav ul li {
-    font-weight: 500;
-}
 
 /* Hero Section */
 .hero {
