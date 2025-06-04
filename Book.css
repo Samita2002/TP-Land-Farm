@@ -126,3 +126,22 @@ label {
   margin: 0 auto;
 }
 
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #127410;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #276397;
+}

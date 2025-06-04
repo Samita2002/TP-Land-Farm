@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>จองกิจกรรมฟาร์ม</title>
     <link rel="stylesheet" href="Book.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
+      <button onclick="history.back()" class="back-button">
+    <i data-lucide="arrow-left"></i>
+  </button>
+
     <section id="booking-form" class="form-section">
         <div class="container">
 
@@ -32,7 +37,9 @@
 
                 </form>
             </div>
-
+ <script>
+    lucide.createIcons();
+  </script>
             <script src="main.js"></script>
     </section>
 </body>
