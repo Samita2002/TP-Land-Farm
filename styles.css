@@ -616,11 +616,10 @@ img {
 }
 
 .fish-card {
-    background-color: #d3e0b7;
     padding: 1rem;
     text-align: center;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .fish-card img {
