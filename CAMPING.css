@@ -82,6 +82,13 @@ body {
     font-size: 14px;
   }
 }
+@media (max-width: 480px) {
+  .single-image img,
+  .image img {
+    height: auto;
+    max-height: 280px;
+  }
+}
 
 .image {
   text-align: center;
