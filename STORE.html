@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="สินค้าเกษตรออร์แกนิค ผักผลไม้สดใหม่จากฟาร์ม ปลอดสารเคมี ส่งตรงถึงบ้าน">
+  <meta name="keywords" content="เกษตรออร์แกนิค, ผักสด, ผลไม้, ปลอดสารเคมี, ฟาร์ม">
+  <title>สินค้า</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="STORE.css">
+  
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'kanit': ['Kanit', 'sans-serif'],
+          },
+          colors: {
+            'organic-green': {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-kanit bg-gray-50">
+
+  
+ <!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="flex items-center">
+    <!-- ปุ่มย้อนกลับแยกออกมา อยู่ชิดซ้ายสุด -->
+    <button onclick="history.back()" class="back-button ml-2">
+      <i data-lucide="arrow-left"></i>
+    </button>
+
+    <!-- เนื้อหาหลักของ Navbar -->
+    <div class="flex-1">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- โลโก้และชื่อ -->
+          <div class="flex items-center space-x-2">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+            </div>
+            <span class="text-xl font-bold text-gray-800">
+              👨🏻‍🌾 ทีพีแลนด์ ฟาร์ม TP LAND FARM 👨🏻‍🌾
+            </span>
+          </div>
+
+          <!-- ปุ่มต่าง ๆ ด้านขวา -->
+          <div class="flex items-center space-x-4">
+            <button id="searchBtn" class="p-2 text-gray-600 hover:text-green-700">
+              <i data-feather="search" class="w-5 h-5"></i>
+            </button>
+            <button id="cartBtn" class="relative p-2 text-gray-600 hover:text-green-700">
+              <i data-feather="shopping-cart" class="w-5 h-5"></i>
+              <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
+            </button>
+            <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-600">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!-- Search Modal -->
+  <div id="searchModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+    <div class="flex items-start justify-center pt-16 px-4">
+      <div class="bg-white rounded-lg w-full max-w-md">
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-semibold">ค้นหาสินค้า</h3>
+            <button id="closeSearchModal" class="text-gray-400 hover:text-gray-600">
+              <i data-feather="x" class="w-5 h-5"></i>
+            </button>
+          </div>
+          <input type="text" id="searchInput" placeholder="ค้นหาสินค้า..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-organic-green-500">
+          <div id="searchResults" class="mt-4 max-h-60 overflow-y-auto"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marquee Section -->
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <div class="marquee-content">
+    <div class="marquee-content">
+        <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
+        <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
+      </div>
+       <div class="marquee-content">
+        <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
+        <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative w-full h-[600px] overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+    <img src="backup/288.jpg" 
+         alt="ภาพทุ่งนาเขียวขจีมีแสงแดดส่องผ่านต้นไม้และท้องฟ้าสีฟ้า" 
+         class="w-full h-full object-cover" 
+         loading="lazy" />
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+      <div class="max-w-4xl">
+        <h1 class="text-white font-bold text-4xl md:text-6xl leading-tight mb-6 animate-fade-in-up">
+          สินค้าเกษตรออร์แกนิค
+        </h1>
+        <p class="text-white text-lg md:text-2xl mb-8 animate-fade-in-up animation-delay-200">
+          ผักผลไม้สดใหม่จากฟาร์ม ปลอดสารเคมี ส่งตรงถึงบ้าน
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
+          <button onclick="scrollToProducts()" class="bg-organic-green-600 hover:bg-organic-green-700 text-white font-medium text-lg rounded-full px-8 py-4 transition-all transform hover:scale-105 shadow-lg">
+            เลือกชมสินค้า
+          </button>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-organic-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-feather="check-circle" class="w-8 h-8 text-organic-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">ปลอดสารเคมี 100%</h3>
+          <p class="text-gray-600">ผลิตจากฟาร์มออร์แกนิคแท้ ไม่ใช้สารเคมีใดๆ</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-organic-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-feather="truck" class="w-8 h-8 text-organic-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">จัดส่งรวดเร็ว</h3>
+          <p class="text-gray-600">ส่งตรงจากฟาร์ม ได้รับความสดใหม่ภายใน 24 ชม.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-organic-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-feather="heart" class="w-8 h-8 text-organic-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">ดีต่อสุขภาพ</h3>
+          <p class="text-gray-600">อุดมไปด้วยวิตามินและสารอาหารเต็มพิกัด</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">สินค้าของเรา</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          ผลิตผลเกษตรคุณภาพสูง ปลูกด้วยความใส่ใจ เพื่อสุขภาพที่ดีของคุณและครอบครัว
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <button class="filter-btn active" data-filter="all">
+          ทั้งหมด
+        </button>
+        <button class="filter-btn" data-filter="vegetables">
+          ผักสด
+        </button>
+        <button class="filter-btn" data-filter="fruits">
+          ผลไม้
+        </button>
+        <button class="filter-btn" data-filter="premium">
+          สินค้าพรีเมี่ยม
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Products will be inserted here by JavaScript -->
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button id="loadMoreBtn" class="bg-organic-green-600 hover:bg-organic-green-700 text-white font-medium rounded-full px-8 py-3 transition-all transform hover:scale-105">
+          ดูสินค้าเพิ่มเติม
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+        
+
+
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+    <div class="flex items-center justify-center min-h-screen px-4">
+      <div class="bg-white rounded-lg w-full max-w-md max-h-[80vh] overflow-hidden">
+        <div class="flex items-center justify-between p-6 border-b">
+          <h3 class="text-lg font-semibold">ตรวจชะโอนสินค้า</h3>
+          <button id="closeCartModal" class="text-gray-400 hover:text-gray-600">
+            <i data-feather="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+        <div id="cartItems" class="p-6 overflow-y-auto max-h-96">
+          <p class="text-gray-500 text-center">ไม่มีสินค้าในตะกร้า</p>
+        </div>
+        <div id="cartFooter" class="border-t p-6 hidden">
+          <div class="flex justify-between items-center mb-4">
+            <span class="font-semibold">รวม:</span>
+            <span id="cartTotal" class="font-bold text-lg">฿0</span>
+          </div>
+          <button class="w-full bg-organic-green-600 hover:bg-organic-green-700 text-white font-medium py-3 rounded-lg transition-colors">
+            สั่งซื้อ
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Modal -->
+  <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+    <div class="flex items-center justify-center min-h-screen px-4">
+      <div class="bg-white rounded-lg w-full max-w-2xl max-h-[90vh] overflow-hidden">
+        <div class="relative">
+          <button id="closeProductModal" class="absolute top-4 right-4 z-10 bg-white rounded-full p-2 text-gray-400 hover:text-gray-600">
+            <i data-feather="x" class="w-5 h-5"></i>
+          </button>
+          <div id="productModalContent">
+            <!-- Product details will be inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-organic-green-600 hover:bg-organic-green-700 text-white p-3 rounded-full shadow-lg transition-all transform hover:scale-110 hidden">
+    <i data-feather="chevron-up" class="w-6 h-6"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="STORE.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+  
+  <script>
+    // Initialize Feather Icons
+    feather.replace();
+  </script>
+</body>
+</html>
