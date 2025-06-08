@@ -6,20 +6,15 @@
   <meta name="description" content="สินค้าเกษตรออร์แกนิค ผักผลไม้สดใหม่จากฟาร์ม ปลอดสารเคมี ส่งตรงถึงบ้าน">
   <meta name="keywords" content="เกษตรออร์แกนิค, ผักสด, ผลไม้, ปลอดสารเคมี, ฟาร์ม">
   <title>สินค้า</title>
-  
-  <!-- Fonts -->
+
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Tailwind CSS -->
+
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Feather Icons -->
+
   <script src="https://unpkg.com/feather-icons"></script>
-  
-  <!-- Custom Styles -->
+
   <link rel="stylesheet" href="STORE.css">
-  
-  <!-- Tailwind Config -->
+
   <script>
     tailwind.config = {
       theme: {
@@ -48,49 +43,40 @@
 </head>
 <body class="font-kanit bg-gray-50">
 
-  
- <!-- Navigation -->
-<nav class="bg-white shadow-lg sticky top-0 z-50">
-  <div class="flex items-center">
-    <!-- ปุ่มย้อนกลับแยกออกมา อยู่ชิดซ้ายสุด -->
-    <button onclick="history.back()" class="back-button ml-2">
-      <i data-lucide="arrow-left"></i>
-    </button>
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="flex items-center">
+      <button onclick="history.back()" class="back-button ml-2">
+        <i data-lucide="arrow-left"></i>
+      </button>
 
-    <!-- เนื้อหาหลักของ Navbar -->
-    <div class="flex-1">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <!-- โลโก้และชื่อ -->
-          <div class="flex items-center space-x-2">
-            <div class="w-10 h-10 rounded-full overflow-hidden">
+      <div class="flex-1">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <div class="flex items-center space-x-2">
+              <div class="w-10 h-10 rounded-full overflow-hidden">
+              </div>
+              <span class="text-xl font-bold text-gray-800">
+                👨🏻‍🌾 ทีพีแลนด์ ฟาร์ม TP LAND FARM 👨🏻‍🌾
+              </span>
             </div>
-            <span class="text-xl font-bold text-gray-800">
-              👨🏻‍🌾 ทีพีแลนด์ ฟาร์ม TP LAND FARM 👨🏻‍🌾
-            </span>
-          </div>
 
-          <!-- ปุ่มต่าง ๆ ด้านขวา -->
-          <div class="flex items-center space-x-4">
-            <button id="searchBtn" class="p-2 text-gray-600 hover:text-green-700">
-              <i data-feather="search" class="w-5 h-5"></i>
-            </button>
-            <button id="cartBtn" class="relative p-2 text-gray-600 hover:text-green-700">
-              <i data-feather="shopping-cart" class="w-5 h-5"></i>
-              <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
-            </button>
-            <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-600">
-            </button>
+            <div class="flex items-center space-x-4">
+              <button id="searchBtn" class="p-2 text-gray-600 hover:text-green-700">
+                <i data-feather="search" class="w-5 h-5"></i>
+              </button>
+              <button id="cartBtn" class="relative p-2 text-gray-600 hover:text-green-700">
+                <i data-feather="shopping-cart" class="w-5 h-5"></i>
+                <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
+              </button>
+              <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-600">
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-
-
-  <!-- Search Modal -->
   <div id="searchModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
     <div class="flex items-start justify-center pt-16 px-4">
       <div class="bg-white rounded-lg w-full max-w-md">
@@ -108,27 +94,24 @@
     </div>
   </div>
 
-  <!-- Marquee Section -->
   <div class="marquee-container">
     <div class="marquee-track">
       <div class="marquee-content">
-    <div class="marquee-content">
         <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
         <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
       </div>
-       <div class="marquee-content">
+      <div class="marquee-content">
         <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
         <span>🌱 ผักสดใหม่ทุกวันปลอดสารพิษ · 🍎 ผลไม้สดหวานๆจากฟาร์ม · 🚚 จัดส่งฟรีเมื่อสั่งเกิน 1,000฿ · 🏕️ ที่พักลานกางเต็นท์ ริมสวนธรรมชาติ · ✨ แวะเยี่ยมชมฟาร์มของเราได้เลย · </span>
       </div>
     </div>
   </div>
 
-  <!-- Hero Section -->
   <section id="home" class="relative w-full h-[600px] overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
-    <img src="backup/288.jpg" 
-         alt="ภาพทุ่งนาเขียวขจีมีแสงแดดส่องผ่านต้นไม้และท้องฟ้าสีฟ้า" 
-         class="w-full h-full object-cover" 
+    <img src="backup/288.jpg"
+         alt="ภาพทุ่งนาเขียวขจีมีแสงแดดส่องผ่านต้นไม้และท้องฟ้าสีฟ้า"
+         class="w-full h-full object-cover"
          loading="lazy" />
     <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
       <div class="max-w-4xl">
@@ -142,13 +125,11 @@
           <button onclick="scrollToProducts()" class="bg-organic-green-600 hover:bg-organic-green-700 text-white font-medium text-lg rounded-full px-8 py-4 transition-all transform hover:scale-105 shadow-lg">
             เลือกชมสินค้า
           </button>
-      
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features Section -->
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -177,7 +158,6 @@
     </div>
   </section>
 
-  <!-- Products Section -->
   <section id="products" class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center mb-12">
@@ -187,7 +167,6 @@
         </p>
       </div>
 
-      <!-- Filter Buttons -->
       <div class="flex flex-wrap justify-center gap-3 mb-12">
         <button class="filter-btn active" data-filter="all">
           ทั้งหมด
@@ -203,12 +182,9 @@
         </button>
       </div>
 
-      <!-- Products Grid -->
       <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <!-- Products will be inserted here by JavaScript -->
-      </div>
+        </div>
 
-      <!-- Load More Button -->
       <div class="text-center mt-12">
         <button id="loadMoreBtn" class="bg-organic-green-600 hover:bg-organic-green-700 text-white font-medium rounded-full px-8 py-3 transition-all transform hover:scale-105">
           ดูสินค้าเพิ่มเติม
@@ -217,19 +193,11 @@
     </div>
   </section>
 
-
-  
-
-        
-
-
-
-  <!-- Cart Modal -->
   <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
     <div class="flex items-center justify-center min-h-screen px-4">
       <div class="bg-white rounded-lg w-full max-w-md max-h-[80vh] overflow-hidden">
         <div class="flex items-center justify-between p-6 border-b">
-          <h3 class="text-lg font-semibold">ตรวจชะโอนสินค้า</h3>
+          <h3 class="text-lg font-semibold">ตรวจรายการสินค้า</h3>
           <button id="closeCartModal" class="text-gray-400 hover:text-gray-600">
             <i data-feather="x" class="w-6 h-6"></i>
           </button>
@@ -250,7 +218,6 @@
     </div>
   </div>
 
-  <!-- Product Detail Modal -->
   <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
     <div class="flex items-center justify-center min-h-screen px-4">
       <div class="bg-white rounded-lg w-full max-w-2xl max-h-[90vh] overflow-hidden">
@@ -259,26 +226,21 @@
             <i data-feather="x" class="w-5 h-5"></i>
           </button>
           <div id="productModalContent">
-            <!-- Product details will be inserted here -->
-          </div>
+            </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Back to Top Button -->
   <button id="backToTop" class="fixed bottom-6 right-6 bg-organic-green-600 hover:bg-organic-green-700 text-white p-3 rounded-full shadow-lg transition-all transform hover:scale-110 hidden">
     <i data-feather="chevron-up" class="w-6 h-6"></i>
   </button>
 
-  <!-- Scripts -->
   <script src="STORE.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
-
-  
+  <script>
+    lucide.createIcons();
+  </script>
   <script>
     // Initialize Feather Icons
     feather.replace();

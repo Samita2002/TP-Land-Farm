@@ -5,7 +5,6 @@ let currentFilter = 'all';
 let currentPage = 1;
 const productsPerPage = 12;
 
-
 // Product data
 const productData = [
   {
@@ -152,7 +151,7 @@ const productData = [
     rating: 5.0,
     reviews: 67
   },
- {
+  {
     id: 13,
     name: 'มะเขือเทศคอร์นเกล็ด',
     description: 'ผลมะเขือเทศใหม่ ปลอดสารเคมี หวานน้ำ เหมาะสำหรับนำทำอาหาร',
@@ -298,8 +297,6 @@ const productData = [
   }
 ];
 
-
-
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
   products = [...productData];
@@ -308,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initializeApp() {
   setupEventListeners();
-  renderProducts(); // เรียก renderProducts() เพื่อแสดงสินค้าและดาวตั้งแต่แรก
+  renderProducts(); // Call renderProducts() to display products and stars initially
   updateCartDisplay();
 }
 
@@ -374,7 +371,7 @@ function setupEventListeners() {
   const loadMoreBtn = document.getElementById('loadMoreBtn');
   loadMoreBtn.addEventListener('click', loadMoreProducts);
 
-    // Contact form
+  // Contact form
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', handleContactForm);
@@ -491,7 +488,7 @@ function renderProducts() {
     card.classList.add('product-enter');
   });
 
-  // *** เพิ่มบรรทัดนี้เข้ามา เพื่อให้ Feather Icons แสดงผลดาวในสินค้าที่โหลดมาครั้งแรก ***
+  // Initialize Feather Icons for newly loaded products
   feather.replace();
 }
 
@@ -502,43 +499,43 @@ function createProductCard(product) {
     premium: 'พรีเมี่ยม'
   };
 
-return `
-  <div class="product-card">
-    <div class="relative overflow-hidden">
-      <img src="${product.image}"
-           alt="${product.name}"
-           class="w-full h-48 object-cover"
-           loading="lazy">
-      <span class="product-badge ${product.category}">
-        ${categoryNames[product.category]}
-      </span>
-      ${!product.inStock ? '<div class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center"><span class="text-white font-semibold">หมด</span></div>' : ''}
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-lg mb-2 line-clamp-1">${product.name}</h3>
-      <p class="text-gray-600 text-sm mb-3 line-clamp-2">${product.description}</p>
-      <div class="flex items-center mb-3">
-        <div class="flex items-center mr-2">
-          ${generateStars(product.rating)}
-        </div>
-        <span class="text-sm text-gray-500">(${product.reviews})</span>
+  return `
+    <div class="product-card">
+      <div class="relative overflow-hidden">
+        <img src="${product.image}"
+             alt="${product.name}"
+             class="w-full h-48 object-cover"
+             loading="lazy">
+        <span class="product-badge ${product.category}">
+          ${categoryNames[product.category]}
+        </span>
+        ${!product.inStock ? '<div class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center"><span class="text-white font-semibold">หมด</span></div>' : ''}
       </div>
-      <div class="flex items-center justify-between">
-        <span class="text-xl font-bold text-organic-green-600">฿${product.price}/${product.unit}</span>
-        <div class="flex space-x-2">
-          <button onclick="openProductDetail(${product.id})"
-                  class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-lg text-sm transition-colors">
-            ดูรายละเอียด
-          </button>
-          <button onclick="addToCart(${product.id})"
-                  class="btn-primary text-sm px-4 py-2 ${!product.inStock ? 'opacity-50 cursor-not-allowed' : ''}"
-                  ${!product.inStock ? 'disabled' : ''}>
-            เพิ่ม
-          </button>
+      <div class="p-4">
+        <h3 class="font-semibold text-lg mb-2 line-clamp-1">${product.name}</h3>
+        <p class="text-gray-600 text-sm mb-3 line-clamp-2">${product.description}</p>
+        <div class="flex items-center mb-3">
+          <div class="flex items-center mr-2">
+            ${generateStars(product.rating)}
+          </div>
+          <span class="text-sm text-gray-500">(${product.reviews})</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-xl font-bold text-organic-green-600">฿${product.price}/${product.unit}</span>
+          <div class="flex space-x-2">
+            <button onclick="openProductDetail(${product.id})"
+                    class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-lg text-sm transition-colors">
+              ดูรายละเอียด
+            </button>
+            <button onclick="addToCart(${product.id})"
+                    class="btn-primary text-sm px-4 py-2 ${!product.inStock ? 'opacity-50 cursor-not-allowed' : ''}"
+                    ${!product.inStock ? 'disabled' : ''}>
+              เพิ่ม
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   `;
 }
 
@@ -692,7 +689,7 @@ function addToCart(productId, quantity = 1) {
   }
 
   updateCartDisplay();
-  showNotification(`เพิ่ม ${product.name} ลงตะกร้าแล้ว`);
+  showNotification(`เพิ่มลงตะกร้าแล้ว`);
 }
 
 function addToCartFromModal(productId) {

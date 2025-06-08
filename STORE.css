@@ -18,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ปุ่มย้อนกลับ */
+/* Back Button */
 .back-button {
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@ html {
   background-color: #127410;
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 9999px; /* ใช้ tailwind-style border-full */
+  border-radius: 9999px; /* Using tailwind-style border-full */
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -44,10 +44,7 @@ html {
   }
 }
 
-
 /* Marquee Animation */
-
-
 .marquee-container {
   background-color: #bbf7d0;
   color: #14532d;
@@ -408,5 +405,3 @@ select:focus {
   visibility: visible;
   transform: translateY(0);
 }
-
-
