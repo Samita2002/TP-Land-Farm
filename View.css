@@ -1,16 +1,51 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  background-color: #fff;
+/* CSS Custom Properties for theming */
+:root {
+  --primary-green: #2d6a4f;
+  --light-green: #a3b18a;
+  --sage-green: #8cbf9f;
+  --sandy-brown: #e0b084;
+  --forest-green: #22543d;
+  --saddle-brown: #8b5e3c;
+  --success-green: #22c55e;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --background-light: #f9fafb;
+  --white: #fff;
+  --yellow-light: #fef9c3;
 }
 
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  line-height: 1.6;
+  color: var(--gray-700);
+}
+
+/* Layout utilities */
 .section-padding {
   padding: 60px 20px;
 }
 
 .container-custom {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container {
+  max-width: 112rem; /* 1792px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -21,20 +56,48 @@ body {
   margin-bottom: 4rem;
 }
 
+/* Typography */
 .section-title {
   font-size: 2.5rem;
-  color: #2d6a4f;
-  font-weight: bold;
+  color: var(--primary-green);
+  font-weight: 700;
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #4b5563;
+  color: var(--gray-600);
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
+/* Back button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #127410;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0 0 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+  background-color: #276397;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Tips section */
 .tips-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -54,50 +117,60 @@ body {
 }
 
 .icon-box {
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
   color: white;
+  font-size: 1.5rem;
 }
 
-.bg-sage { background-color: #8cbf9f; }
-.bg-sandy { background-color: #e0b084; }
-.bg-forest { background-color: #22543d; }
-.bg-saddle { background-color: #8b5e3c; }
+.bg-sage { background-color: var(--sage-green); }
+.bg-sandy { background-color: var(--sandy-brown); }
+.bg-forest { background-color: var(--forest-green); }
+.bg-saddle { background-color: var(--saddle-brown); }
 
 .card {
-  background: #f9fafb;
-  border-radius: 10px;
-  padding: 1.5rem;
-  transition: box-shadow 0.3s ease;
+  background: var(--background-light);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: 100%;
 }
 
 .card:hover {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .card-title {
   font-size: 1.25rem;
-  font-weight: bold;
-  color: #22543d;
+  font-weight: 600;
+  color: var(--forest-green);
   margin-bottom: 0.75rem;
 }
 
 .card-desc {
-  color: #4a5568;
+  color: var(--gray-600);
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
+/* Activities section */
 .grid-activities {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 1024px) {
   .grid-activities {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -105,6 +178,7 @@ body {
   width: 100%;
   height: 240px;
   object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
 .card-content {
@@ -113,19 +187,21 @@ body {
 
 .card-content h3 {
   font-size: 1.5rem;
-  color: #2d6a4f;
+  color: var(--primary-green);
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .card-content p {
-  color: #4b5563;
+  color: var(--gray-600);
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .card-content ul {
   padding: 0;
   list-style: none;
-  color: #4b5563;
+  color: var(--gray-600);
 }
 
 .card-content li {
@@ -135,11 +211,37 @@ body {
 }
 
 .card-content .check-icon {
-  color: #a3b18a;
-  margin-right: 0.5rem;
+  color: var(--light-green);
+  margin-right: 0.75rem;
+  font-weight: bold;
 }
 
-.harvest-section {
+/* Placeholder for missing images */
+.activity-image-placeholder {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(135deg, var(--light-green), var(--primary-green));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.activity-image-placeholder i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.activity-image-placeholder p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Harvest section and trends main section */
+.harvest-section,
+.trends-main-section {
   background: linear-gradient(to right, #a3b18a, #2d6a4f);
   border-radius: 1rem;
   color: white;
@@ -199,153 +301,227 @@ body {
   object-fit: cover;
 }
 
-.trend-box {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+.harvest-image .activity-image-placeholder {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 300px;
+  border-radius: 0;
 }
 
-/* กำหนดสีเขียวสำหรับ agri-green-500 */
-.text-agri-green-500 {
-  color: #22c55e; /* สีเขียวสดใสแบบ Tailwind's green-500 */
+
+/* ========== Trends Section ========== */
+
+/* Main trends section */
+.trends-main-section {
+  margin-bottom: 3rem;
 }
 
-/* จัดการ padding รอบ section */
-.section-stats {
-  padding-top: 4rem;   /* py-16 เท่ากับ 64px หรือ 4rem */
-  padding-bottom: 4rem;
-  background-color: #fff;
+/* Grid layout for trend cards */
+.trend-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-/* container กำหนดความกว้างสูงสุดและ padding รอบ */
-.container {
-  max-width: 112rem; /* max-w-7xl เท่ากับ 112rem (1792px) */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;  /* px-4 = 16px */
-  padding-right: 1rem;
-}
-
-/* responsive padding สำหรับ sm และ lg */
-@media (min-width: 640px) {
-  .container {
-    padding-left: 1.5rem; /* sm:px-6 = 24px */
-    padding-right: 1.5rem;
+@media (min-width: 768px) {
+  .trend-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  .container {
-    padding-left: 2rem; /* lg:px-8 = 32px */
-    padding-right: 2rem;
+  .trend-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Grid layout */
-.grid-stats {
-  display: grid;
-  gap: 2rem; /* gap-8 = 32px */
+/* Trend card content */
+.trend-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-/* ตั้ง 4 คอลัมน์เมื่อหน้าจอกว้างขึ้น (md) */
+.trend-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.trend-card-icon {
+  font-size: 1.25rem;
+}
+
+.trend-card-description {
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.trend-card-growth {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-green {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.bg-gradient-yellow {
+  background: linear-gradient(135deg, #fefce8, #fef3c7);
+}
+
+/* Text color helpers */
+.text-green-600 {
+  color: #16a34a;
+}
+
+.text-blue-600 {
+  color: #2563eb;
+}
+
+.text-yellow-600 {
+  color: #ca8a04;
+}
+
+/* ========== Trends Section Copy (styled like harvest section) ========== */
+
+.trends-section-copy {
+  background: rgb(255, 255, 255);
+  border-radius: 1rem;
+  color: rgb(0, 0, 0);
+  margin-top: 4rem;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.trends-grid-copy {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .trends-grid-copy {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Text section */
+.trends-text {
+  padding: 3rem;
+}
+
+.trends-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.trends-text p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.trends-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trends-text li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.trends-text .check-icon {
+  color: #62d524;
+  margin-right: 0.75rem;
+  font-weight: bold;
+}
+
+/* Image section */
+.trends-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trends-image .activity-image-placeholder {
+  height: 100%;
+  min-height: 300px;
+  border-radius: 0;
+}
+
+
+
+
+
+
+
+/* Statistics section */
+.section-stats {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: var(--white);
+}
+
+.grid-stats {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .grid-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
   .grid-stats {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* จัดข้อความกลาง */
-.text-center {
-  text-align: center;
-}
-
-/* ค่าใหญ่ตัวเลข */
 .stat-value {
-  font-weight: 700;  /* font-bold */
-  font-size: 2.25rem; /* text-4xl = 36px */
-  margin-bottom: 0.5rem; /* mb-2 = 8px */
-  color: #22c55e; /* สีเขียว */
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
 }
 
-/* คำอธิบาย */
 .stat-label {
-  color: #4b5563; /* text-gray-600 */
+  font-size: 1rem;
+  color: var(--gray-600);
+  font-weight: 500;
 }
 
-
-/* Basic Header Layout */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  flex-wrap: wrap;
-  background-color: #fff;
-  position: relative;
-  z-index: 10;
-}
-
-/* Hamburger Button */
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Responsive Nav Menu */
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2rem;
   }
-
-  nav {
-    width: 100%;
+  
+  .harvest-text {
+    padding: 2rem;
   }
-
-  nav ul {
-    flex-direction: column;
-    display: none;
-    width: 100%;
-    padding: 1rem 0;
-    background-color: #fff;
-  }
-
-  nav ul li {
-    text-align: center;
-    padding: 0.5rem 0;
-  }
-
-  nav.show ul {
-    display: flex;
+  
+  .harvest-text h3 {
+    font-size: 1.5rem;
   }
 }
-.back-button {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: #127410; /* green-700 */
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 10rem;
-  transition: background-color 0.3s ease;
-  margin-left: 1rem; /* ขยับไปทางขวา */
-  margin-top: 1rem;   /* ขยับลงมาด้านล่าง */
-}
-
-.back-button:hover {
-  background-color: #276397; /* green-400 */
-}
-

@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>เคล็ดลับและกิจกรรมการทำฟาร์ม</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="View.css" />
 </head>
@@ -14,7 +13,6 @@
   <i data-lucide="arrow-left"></i>
 </button>
 
-  <!-- เคล็ดลับการทำฟาร์ม -->
   <section id="tips" class="section-padding">
     <div class="container-custom">
       <div class="text-center mb-16">
@@ -27,11 +25,10 @@
     </div>
   </section>
 
-  <!-- กิจกรรมการทำฟาร์ม -->
-  <section id="activities" class="section-padding ">
+  <section id="activities" class="section-padding">
     <div class="container-custom">
       <div class="text-center mb-16">
-        <h2 class="section-title">การทำฟาร์ม</h2>
+        <h2 class="section-title">กิจกรรมหลักในการทำฟาร์ม</h2>
         <p class="section-subtitle">
           เรียนรู้ 5 กิจกรรมหลักที่จำเป็นสำหรับการทำฟาร์มที่ประสบความสำเร็จ
         </p>
@@ -42,15 +39,15 @@
       <div class="harvest-section">
         <div class="harvest-grid">
           <div class="harvest-text">
-            <h3>การเก็บเกี่ยวและจัดเก็บ</h3>
+            <h3>การเก็บเกี่ยวและจัดเก็บผลผลิต</h3>
             <p>
               เรียนรู้เทคนิคการเก็บเกี่ยวในเวลาที่เหมาะสม การคัดแยกคุณภาพ และวิธีการจัดเก็บที่ยืดอายุของผลผลิต
             </p>
             <ul>
-              <li><span class="check-icon">✔</span> การกำหนดเวลาเก็บเกี่ยว</li>
-              <li><span class="check-icon">✔</span> เทคนิคการคัดแยก</li>
-              <li><span class="check-icon">✔</span> การจัดเก็บและขนส่ง</li>
-              <li><span class="check-icon">✔</span> การแปรรูปเบื้องต้น</li>
+              <li><span class="check-icon">✔</span> การกำหนดเวลาเก็บเกี่ยวที่เหมาะสม</li>
+              <li><span class="check-icon">✔</span> เทคนิคการคัดแยกและบรรจุผลผลิต</li>
+              <li><span class="check-icon">✔</span> การจัดเก็บและขนส่งเพื่อรักษาคุณภาพ</li>
+              <li><span class="check-icon">✔</span> การแปรรูปเบื้องต้นเพื่อเพิ่มมูลค่า</li>
             </ul>
           </div>
           <div class="harvest-image">
@@ -61,53 +58,56 @@
     </div>
   </section>
 
-  <!-- แนวโน้มเกษตรอินทรีย์ -->
 <section id="trends" class="section-padding">
   <div class="container-custom">
-    <div class="grid lg:grid-cols-2 gap-12 items-stretch mb-16">
-      <div class="trend-box h-full">
-        <h2 class="section-title">แนวโน้มเกษตรอินทรีย์</h2>
-        <p class="section-subtitle">
-          เกษตรอินทรีย์กำลังเติบโตอย่างรวดเร็วทั่วโลก ด้วยความต้องการอาหารปลอดภัยและการรักษาสิ่งแวดล้อม
-        </p>
-        <div class="space-y-4" id="trendFeatures"></div>
-      </div>
-      <div>
-        <img
-          src="backup/003.jpg"
-          alt="วิธีการเกษตรยั่งยืน"
-          class="rounded-xl shadow-lg w-full h-auto"
-        />
+    <div class="text-center mb-16">
+      <h2 class="section-title">แนวโน้มและโอกาสในเกษตรอินทรีย์</h2>
+      <p class="section-subtitle">
+        สำรวจแนวโน้มสำคัญที่ขับเคลื่อนการเติบโตของเกษตรอินทรีย์และโอกาสสำหรับเกษตรกร
+      </p>
+    </div>
+    <div class="trends-section-copy">
+      <div class="trends-grid-copy">
+        <div class="trends-text">
+          <h3>โอกาสและการเติบโต</h3>
+          <p>
+            เกษตรอินทรีย์กำลังเติบโตอย่างรวดเร็วทั่วโลก ด้วยความต้องการอาหารปลอดภัยและการรักษาสิ่งแวดล้อม
+          </p>
+          <ul id="trendFeatures"></ul>
+        </div>
+        <div class="trends-image">
+          <img src="backup/003.jpg" alt="วิธีการเกษตรยั่งยืน" />
+        </div>
       </div>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="trendCards"></div>
-  </div>
-</section>
-<section class="section-stats">
-  <div class="container">
-    <div class="grid-stats">
-      <div class="text-center">
-        <div class="stat-value">2.5M</div>
-        <div class="stat-label">เกษตรกรใช้เทคโนโลยี</div>
-      </div>
-      <div class="text-center">
-        <div class="stat-value">35%</div>
-        <div class="stat-label">เพิ่มผลผลิต</div>
-      </div>
-      <div class="text-center">
-        <div class="stat-value">60%</div>
-        <div class="stat-label">ลดการใช้สารเคมี</div>
-      </div>
-      <div class="text-center">
-        <div class="stat-value">15+</div>
-        <div class="stat-label">ปีประสบการณ์</div>
-      </div>
-    </div>
+
+    <div class="trend-cards-grid" id="trendCards"></div>
   </div>
 </section>
 
 
-
+  <section class="section-stats">
+    <div class="container">
+      <div class="grid-stats">
+        <div class="text-center">
+          <div class="stat-value">2.5M</div>
+          <div class="stat-label">เกษตรกรที่ใช้เทคโนโลยี</div>
+        </div>
+        <div class="text-center">
+          <div class="stat-value">35%</div>
+          <div class="stat-label">ผลผลิตเพิ่มขึ้นเฉลี่ย</div>
+        </div>
+        <div class="text-center">
+          <div class="stat-value">60%</div>
+          <div class="stat-label">ลดการใช้สารเคมี</div>
+        </div>
+        <div class="text-center">
+          <div class="stat-value">15+</div>
+          <div class="stat-label">ปีแห่งประสบการณ์</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="View.js"></script>
 </body>

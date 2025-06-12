@@ -34,8 +34,18 @@ const activityContainer = document.getElementById("activities-list");
 activities.forEach((activity) => {
   const card = document.createElement("div");
   card.className = "card";
+  // Check if image exists, otherwise use placeholder
+  const imageHtml = activity.image 
+    ? `<img src="${activity.image}" alt="${activity.title}">`
+    : `
+      <div class="activity-image-placeholder">
+        <i data-lucide="image"></i>
+        <p>Image Not Available</p>
+      </div>
+    `;
+
   card.innerHTML = `
-    <img src="${activity.image}" alt="${activity.title}">
+    ${imageHtml}
     <div class="card-content">
       <h3>${activity.title}</h3>
       <p>${activity.description}</p>
@@ -45,48 +55,44 @@ activities.forEach((activity) => {
   activityContainer.appendChild(card);
 });
 
-// Trends
+
+// Trends Features - styled like harvest section list items
 const trendFeatures = [
-  { title: "การเติบโตของตลาด", description: "ตลาดผลิตภัณฑ์อินทรีย์เติบโต 8-10% ต่อปี"},
+  { title: "การเติบโตของตลาด", description: "ตลาดผลิตภัณฑ์อินทรีย์เติบโต 8-10% ต่อปี" },
   { title: "นโยบายภาครัฐ", description: "สนับสนุนการเกษตรอินทรีย์และการรับรองมาตรฐาน" },
   { title: "เทคโนโลยีสมัยใหม่", description: "AI และ IoT ช่วยเพิ่มประสิทธิภาพการเกษตรอินทรีย์" },
 ];
 
+// Trend Cards
 const trendCards = [
-  { title: "เกษตรดิจิทัล", description: "การใช้เทคโนโลยี AI และ IoT...", growth: "เติบโต +25% ต่อปี", gradient: "from-green-50 to-green-100", textColor: "text-green-600", icon: "🤖" },
-  { title: "เกษตรเมือง", description: "การปลูกผักอินทรีย์ในเมือง...", growth: "เติบโต +30% ต่อปี", gradient: "from-blue-50 to-blue-100", textColor: "text-blue-600", icon: "🏢" },
-  { title: "อาหาร", description: "ผลิตภัณฑ์อินทรีย์ที่เพิ่มคุณค่าทางโภชนาการ", growth: "เติบโต +20% ต่อปี", gradient: "from-yellow-50 to-yellow-100", textColor: "text-yellow-600", icon: "❤️" },
+  { title: "เกษตรดิจิทัล", description: "การใช้เทคโนโลยี AI และ IoT เพื่อเพิ่มประสิทธิภาพการผลิต", growth: "เติบโต +25% ต่อปี", gradient: "bg-gradient-green", textColor: "text-green-600", icon: "🤖" },
+  { title: "เกษตรเมือง", description: "การปลูกผักอินทรีย์ในเมืองและพื้นที่จำกัด", growth: "เติบโต +30% ต่อปี", gradient: "bg-gradient-blue", textColor: "text-blue-600", icon: "🏢" },
+  { title: "อาหารฟังก์ชัน", description: "ผลิตภัณฑ์อินทรีย์ที่เพิ่มคุณค่าทางโภชนาการ", growth: "เติบโต +20% ต่อปี", gradient: "bg-gradient-yellow", textColor: "text-yellow-600", icon: "❤️" },
 ];
 
+// Populate trend features in harvest-style format
 const featureContainer = document.getElementById("trendFeatures");
 trendFeatures.forEach((feature) => {
-  const item = document.createElement("div");
-  item.className = "flex items-start space-x-4";
-  item.innerHTML = `
-    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-      <svg class="lucide lucide-check text-green-500 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7" /></svg>
-    </div>
-    <div>
-      <h4 class="font-semibold text-gray-900">${feature.title}</h4>
-      <p class="text-gray-600">${feature.description}</p>
-    </div>
-  `;
-  featureContainer?.appendChild(item);
+  const li = document.createElement("li");
+  li.innerHTML = `<span class="check-icon">✔</span> <strong>${feature.title}:</strong> ${feature.description}`;
+  featureContainer.appendChild(li);
 });
 
+// Populate trend cards
 const cardContainer = document.getElementById("trendCards");
 trendCards.forEach((card) => {
   const div = document.createElement("div");
-  div.className = `card bg-gradient-to-br ${card.gradient}`;
+  div.className = `card ${card.gradient}`;
   div.innerHTML = `
-    <div class="flex items-center justify-between mb-4">
-      <h3 class="text-lg font-semibold">${card.title}</h3>
-      <span class="text-xl">${card.icon}</span>
+    <div class="trend-card-header">
+      <h3 class="trend-card-title ${card.textColor}">${card.title}</h3>
+      <span class="trend-card-icon">${card.icon}</span>
     </div>
-    <p class="text-gray-600 mb-4">${card.description}</p>
-    <div class="text-sm ${card.textColor} font-medium">${card.growth}</div>
+    <p class="trend-card-description">${card.description}</p>
+    <div class="trend-card-growth ${card.textColor}">${card.growth}</div>
   `;
-  cardContainer?.appendChild(div);
+  cardContainer.appendChild(div);
 });
 
+// Initialize Lucide icons
 lucide.createIcons();

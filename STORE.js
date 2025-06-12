@@ -158,7 +158,7 @@ const productData = [
     price: 180,
     unit: 'กก.',
     category: 'vegetables',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.8,
     reviews: 127
@@ -170,7 +170,7 @@ const productData = [
     price: 120,
     unit: 'หัว',
     category: 'vegetables',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.9,
     reviews: 95
@@ -182,7 +182,7 @@ const productData = [
     price: 150,
     unit: 'กก.',
     category: 'vegetables',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.7,
     reviews: 163
@@ -190,11 +190,11 @@ const productData = [
   {
     id: 16,
     name: 'แครอทเบบี้',
-    description: 'ผลมะเขือเทศใหม่ ปลอดสารเคมี หวานน้ำ เหมาะสำหรับนำทำอาหาร',
+    description: 'แครอทเบบี้หวานกรอบ อุดมไปด้วยเบต้าแคโรทีน สีส้มสวยงาม',
     price: 200,
     unit: 'กก.',
     category: 'vegetables',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1582515073490-39981397c445?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.6,
     reviews: 89
@@ -206,7 +206,7 @@ const productData = [
     price: 250,
     unit: 'กก.',
     category: 'vegetables',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.8,
     reviews: 76
@@ -214,11 +214,11 @@ const productData = [
   {
     id: 18,
     name: 'แตงกวาญี่ปุ่น',
-    description: 'ผลมะเขือเทศใหม่ ปลอดสารเคมี หวานน้ำ เหมาะสำหรับนำทำอาหาร',
+    description: 'แตงกวาญี่ปุ่นกรอบสดใส เนื้อแน่น รสชาติหวานเซาะ',
     price: 100,
     unit: 'กก.',
     category: 'vegetables',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.5,
     reviews: 134
@@ -230,7 +230,7 @@ const productData = [
     price: 80,
     unit: 'กก.',
     category: 'vegetables',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.7,
     reviews: 98
@@ -242,7 +242,7 @@ const productData = [
     price: 350,
     unit: 'กก.',
     category: 'fruits',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.9,
     reviews: 187
@@ -254,7 +254,7 @@ const productData = [
     price: 180,
     unit: 'กก.',
     category: 'fruits',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1547514701-42782101795e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.8,
     reviews: 156
@@ -262,11 +262,11 @@ const productData = [
   {
     id: 22,
     name: 'กล้วยหอมทองออร์แกนิค',
-    description: 'กล้วยหอมทองหวานหอม ',
+    description: 'กล้วยหอมทองหวานหอม เนื้อนุ่มละมุน อุดมไปด้วยโพแทสเซียม',
     price: 60,
     unit: 'หวี',
     category: 'fruits',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.6,
     reviews: 203
@@ -274,11 +274,11 @@ const productData = [
   {
     id: 23,
     name: 'ชุดผักสดพรีเมี่ยม',
-    description: 'ชุดผักสดรวม 8 ชนิด สำหรับครอบครัว 4 คน',
+    description: 'ชุดผักสดรวม 8 ชนิด สำหรับครอบครัว 4 คน คัดสรรคุณภาพพิเศษ',
     price: 450,
     unit: 'ชุด',
     category: 'premium',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1590779033100-9f60a05a013d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 4.9,
     reviews: 89
@@ -286,16 +286,17 @@ const productData = [
   {
     id: 24,
     name: 'กล่องผลไม้รวมพรีเมี่ยม',
-    description: 'ผลไม้รวม 6 ชนิด คัดสรรคุณภาพพิเศษ',
+    description: 'ผลไม้รวม 6 ชนิด คัดสรรคุณภาพพิเศษ ของขวัญสุดพิเศษ',
     price: 800,
     unit: 'ลัง',
     category: 'premium',
-    image: 'assets/0013.jpg',
+    image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
     inStock: true,
     rating: 5.0,
     reviews: 67
   }
 ];
+
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -305,19 +306,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initializeApp() {
   setupEventListeners();
-  renderProducts(); // Call renderProducts() to display products and stars initially
+  renderProducts(); // This will render the initial products and call feather.replace()
   updateCartDisplay();
 }
 
 function setupEventListeners() {
-  // Mobile menu toggle
-  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-
   // Search functionality
   const searchBtn = document.getElementById('searchBtn');
   const searchModal = document.getElementById('searchModal');
@@ -371,12 +364,6 @@ function setupEventListeners() {
   const loadMoreBtn = document.getElementById('loadMoreBtn');
   loadMoreBtn.addEventListener('click', loadMoreProducts);
 
-  // Contact form
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', handleContactForm);
-  }
-
   // Back to top button
   const backToTopBtn = document.getElementById('backToTop');
   backToTopBtn.addEventListener('click', () => {
@@ -394,7 +381,7 @@ function setupEventListeners() {
 
   // Close modals when clicking outside
   document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('fixed') && e.target.classList.contains('inset-0')) {
+    if (e.target.classList.contains('modal')) {
       searchModal.classList.add('hidden');
       cartModal.classList.add('hidden');
       productModal.classList.add('hidden');
@@ -408,6 +395,8 @@ function handleSearch() {
 
   if (query.length === 0) {
     resultsContainer.innerHTML = '';
+    // Re-initialize Feather icons for search results if they were previously there
+    feather.replace();
     return;
   }
 
@@ -417,126 +406,99 @@ function handleSearch() {
   );
 
   if (filteredProducts.length === 0) {
-    resultsContainer.innerHTML = '<p class="text-gray-500 text-center py-4">ไม่พบสินค้าที่ค้นหา</p>';
+    resultsContainer.innerHTML = '<p class="text-center">ไม่พบสินค้าที่ค้นหา</p>';
+    // Re-initialize Feather icons just in case previous search results had them
+    feather.replace();
     return;
   }
 
-  const resultsHTML = filteredProducts.slice(0, 5).map(product => `
-    <div class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded cursor-pointer"
-         onclick="openProductDetail(${product.id})">
-      <img src="${product.image}" alt="${product.name}" class="w-12 h-12 object-cover rounded">
-      <div class="flex-1">
-        <h4 class="font-medium text-sm">${product.name}</h4>
-        <p class="text-xs text-gray-600">฿${product.price}/${product.unit}</p>
+  resultsContainer.innerHTML = filteredProducts.map(product => `
+    <div class="search-result-item" onclick="openProductModal(${product.id})" style="padding: 0.75rem; border-bottom: 1px solid #e5e7eb; cursor: pointer; display: flex; align-items: center; gap: 1rem;">
+      <img src="${product.image}" alt="${product.name}" style="width: 3rem; height: 3rem; object-fit: cover; border-radius: 0.375rem;">
+      <div>
+        <div style="font-weight: 500; color: #1f2937;">${product.name}</div>
+        <div style="font-size: 0.875rem; color: #16a34a; font-weight: 600;">฿${product.price}/${product.unit}</div>
       </div>
     </div>
   `).join('');
-
-  resultsContainer.innerHTML = resultsHTML;
-}
-
-function setActiveFilter(filter) {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  filterButtons.forEach(btn => {
-    btn.classList.remove('active');
-    if (btn.getAttribute('data-filter') === filter) {
-      btn.classList.add('active');
-    }
-  });
-  currentFilter = filter;
-}
-
-function filterProducts(filter) {
-  currentPage = 1;
-  renderProducts();
-}
-
-function getFilteredProducts() {
-  if (currentFilter === 'all') {
-    return products;
-  }
-  return products.filter(product => product.category === currentFilter);
-}
-
-function renderProducts() {
-  const productsGrid = document.getElementById('productsGrid');
-  const filteredProducts = getFilteredProducts();
-  const startIndex = 0;
-  const endIndex = currentPage * productsPerPage;
-  const productsToShow = filteredProducts.slice(startIndex, endIndex);
-
-  if (productsToShow.length === 0) {
-    productsGrid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-gray-500">ไม่พบสินค้าในหมวดหมู่นี้</p></div>';
-    return;
-  }
-
-  const productsHTML = productsToShow.map(product => createProductCard(product)).join('');
-  productsGrid.innerHTML = productsHTML;
-
-  // Show/hide load more button
-  const loadMoreBtn = document.getElementById('loadMoreBtn');
-  if (endIndex >= filteredProducts.length) {
-    loadMoreBtn.style.display = 'none';
-  } else {
-    loadMoreBtn.style.display = 'block';
-  }
-
-  // Add animation
-  const productCards = document.querySelectorAll('.product-card');
-  productCards.forEach((card, index) => {
-    card.style.animationDelay = `${index * 0.1}s`;
-    card.classList.add('product-enter');
-  });
-
-  // Initialize Feather Icons for newly loaded products
+  // Call feather.replace() after updating search results
   feather.replace();
 }
 
-function createProductCard(product) {
-  const categoryNames = {
+function setActiveFilter(filter) {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelector(`[data-filter="${filter}"]`).classList.add('active');
+  currentFilter = filter;
+  currentPage = 1;
+}
+
+function filterProducts(filter) {
+  const filteredProducts = filter === 'all'
+    ? products
+    : products.filter(product => product.category === filter);
+
+  renderProductsGrid(filteredProducts.slice(0, productsPerPage));
+  // Call feather.replace() after filtering and rendering
+  feather.replace();
+}
+
+function renderProducts() {
+  const productsToShow = currentFilter === 'all'
+    ? products.slice(0, currentPage * productsPerPage)
+    : products.filter(product => product.category === currentFilter).slice(0, currentPage * productsPerPage);
+
+  renderProductsGrid(productsToShow);
+  // Call feather.replace() after rendering all products
+  feather.replace();
+}
+
+function renderProductsGrid(productsToRender) {
+  const productsGrid = document.getElementById('productsGrid');
+
+  productsGrid.innerHTML = productsToRender.map(product => `
+    <div class="product-card product-enter" onclick="openProductModal(${product.id})">
+      <div class="product-image-container">
+        <img src="${product.image}" alt="${product.name}" loading="lazy">
+        <div class="product-badge ${product.category}">
+          ${getCategoryLabel(product.category)}
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">${product.name}</h3>
+        <p class="product-description">${product.description}</p>
+        <div class="product-rating">
+          <div class="rating-stars">
+            ${generateStars(product.rating)}
+          </div>
+          <span class="rating-text">(${product.reviews})</span>
+        </div>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="price-amount">฿${product.price}</span>
+            <span class="price-unit">/${product.unit}</span>
+          </div>
+          <button class="add-to-cart-btn" onclick="event.stopPropagation(); addToCart(${product.id})">
+            เพิ่มใส่ตะกร้า
+          </button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+  // This is the crucial line: call feather.replace() here after products are rendered.
+  // It's already called by the higher-level renderProducts() and filterProducts()
+  // functions, but putting it here ensures it's always called when the grid is updated.
+  feather.replace();
+}
+
+function getCategoryLabel(category) {
+  const labels = {
     vegetables: 'ผักสด',
     fruits: 'ผลไม้',
     premium: 'พรีเมี่ยม'
   };
-
-  return `
-    <div class="product-card">
-      <div class="relative overflow-hidden">
-        <img src="${product.image}"
-             alt="${product.name}"
-             class="w-full h-48 object-cover"
-             loading="lazy">
-        <span class="product-badge ${product.category}">
-          ${categoryNames[product.category]}
-        </span>
-        ${!product.inStock ? '<div class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center"><span class="text-white font-semibold">หมด</span></div>' : ''}
-      </div>
-      <div class="p-4">
-        <h3 class="font-semibold text-lg mb-2 line-clamp-1">${product.name}</h3>
-        <p class="text-gray-600 text-sm mb-3 line-clamp-2">${product.description}</p>
-        <div class="flex items-center mb-3">
-          <div class="flex items-center mr-2">
-            ${generateStars(product.rating)}
-          </div>
-          <span class="text-sm text-gray-500">(${product.reviews})</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-organic-green-600">฿${product.price}/${product.unit}</span>
-          <div class="flex space-x-2">
-            <button onclick="openProductDetail(${product.id})"
-                    class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-lg text-sm transition-colors">
-              ดูรายละเอียด
-            </button>
-            <button onclick="addToCart(${product.id})"
-                    class="btn-primary text-sm px-4 py-2 ${!product.inStock ? 'opacity-50 cursor-not-allowed' : ''}"
-                    ${!product.inStock ? 'disabled' : ''}>
-              เพิ่ม
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+  return labels[category] || category;
 }
 
 function generateStars(rating) {
@@ -545,16 +507,16 @@ function generateStars(rating) {
   let starsHTML = '';
 
   for (let i = 0; i < fullStars; i++) {
-    starsHTML += '<i data-feather="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>';
+    starsHTML += '<i data-feather="star" class="star" style="fill: currentColor;"></i>';
   }
 
   if (hasHalfStar) {
-    starsHTML += '<i data-feather="star" class="w-4 h-4 text-yellow-400"></i>';
+    starsHTML += '<i data-feather="star" class="star" style="fill: currentColor; opacity: 0.5;"></i>';
   }
 
   const emptyStars = 5 - Math.ceil(rating);
   for (let i = 0; i < emptyStars; i++) {
-    starsHTML += '<i data-feather="star" class="w-4 h-4 text-gray-300"></i>';
+    starsHTML += '<i data-feather="star" class="star" style="opacity: 0.3;"></i>';
   }
 
   return starsHTML;
@@ -562,140 +524,24 @@ function generateStars(rating) {
 
 function loadMoreProducts() {
   currentPage++;
-  const productsGrid = document.getElementById('productsGrid');
-  const filteredProducts = getFilteredProducts();
-  const startIndex = (currentPage - 1) * productsPerPage;
-  const endIndex = currentPage * productsPerPage;
-  const newProducts = filteredProducts.slice(startIndex, endIndex);
-
-  if (newProducts.length === 0) return;
-
-  const newProductsHTML = newProducts.map(product => createProductCard(product)).join('');
-  productsGrid.insertAdjacentHTML('beforeend', newProductsHTML);
-
-  // Update load more button
-  const loadMoreBtn = document.getElementById('loadMoreBtn');
-  if (endIndex >= filteredProducts.length) {
-    loadMoreBtn.style.display = 'none';
-  }
-
-  // Reinitialize Feather icons for new products
-  feather.replace();
+  renderProducts();
 }
 
-function openProductDetail(productId) {
+function addToCart(productId) {
   const product = products.find(p => p.id === productId);
-  if (!product) return;
-
-  const modal = document.getElementById('productModal');
-  const content = document.getElementById('productModalContent');
-
-  const categoryNames = {
-    vegetables: 'ผักสด',
-    fruits: 'ผลไม้',
-    premium: 'พรีเมี่ยม'
-  };
-
-  content.innerHTML = `
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-      <div>
-        <img src="${product.image}"
-             alt="${product.name}"
-             class="w-full h-96 object-cover rounded-lg">
-      </div>
-      <div>
-        <div class="mb-4">
-          <span class="product-badge ${product.category} relative">
-            ${categoryNames[product.category]}
-          </span>
-        </div>
-        <h2 class="text-2xl font-bold mb-4">${product.name}</h2>
-        <p class="text-gray-600 mb-4">${product.description}</p>
-        <div class="flex items-center mb-4">
-          <div class="flex items-center mr-2">
-            ${generateStars(product.rating)}
-          </div>
-          <span class="text-sm text-gray-500">(${product.reviews} รีวิว)</span>
-        </div>
-        <div class="text-3xl font-bold text-organic-green-600 mb-6">
-          ฿${product.price}/${product.unit}
-        </div>
-        <div class="flex items-center space-x-4 mb-6">
-          <label class="font-medium">จำนวน:</label>
-          <div class="quantity-controls">
-            <button type="button" class="quantity-btn" onclick="decreaseQuantity()">-</button>
-            <input type="number" id="productQuantity" value="1" min="1" max="99"
-                   class="w-16 text-center border border-gray-300 rounded px-2 py-1">
-            <button type="button" class="quantity-btn" onclick="increaseQuantity()">+</button>
-          </div>
-        </div>
-        <div class="flex space-x-4">
-          <button onclick="addToCartFromModal(${product.id})"
-                  class="flex-1 btn-primary ${!product.inStock ? 'opacity-50 cursor-not-allowed' : ''}"
-                  ${!product.inStock ? 'disabled' : ''}>
-            ${product.inStock ? 'เพิ่มลงตะกร้า' : 'สินค้าหมด'}
-          </button>
-          <button class="btn-secondary">
-            <i data-feather="heart" class="w-5 h-5"></i>
-          </button>
-        </div>
-        ${product.inStock ? `
-        <div class="mt-6 p-4 bg-green-50 rounded-lg">
-          <div class="flex items-center text-green-700">
-            <i data-feather="check-circle" class="w-5 h-5 mr-2"></i>
-            <span class="font-medium">มีสินค้าพร้อมส่ง</span>
-          </div>
-          <p class="text-sm text-green-600 mt-1">จัดส่งภายใน 24 ชั่วโมง</p>
-        </div>
-        ` : ''}
-      </div>
-    </div>
-  `;
-
-  modal.classList.remove('hidden');
-  document.getElementById('searchModal').classList.add('hidden');
-  feather.replace();
-}
-
-function increaseQuantity() {
-  const input = document.getElementById('productQuantity');
-  const currentValue = parseInt(input.value);
-  if (currentValue < 99) {
-    input.value = currentValue + 1;
-  }
-}
-
-function decreaseQuantity() {
-  const input = document.getElementById('productQuantity');
-  const currentValue = parseInt(input.value);
-  if (currentValue > 1) {
-    input.value = currentValue - 1;
-  }
-}
-
-function addToCart(productId, quantity = 1) {
-  const product = products.find(p => p.id === productId);
-  if (!product || !product.inStock) return;
-
   const existingItem = cart.find(item => item.id === productId);
 
   if (existingItem) {
-    existingItem.quantity += quantity;
+    existingItem.quantity += 1;
   } else {
     cart.push({
       ...product,
-      quantity: quantity
+      quantity: 1
     });
   }
 
   updateCartDisplay();
-  showNotification(`เพิ่มลงตะกร้าแล้ว`);
-}
-
-function addToCartFromModal(productId) {
-  const quantity = parseInt(document.getElementById('productQuantity').value);
-  addToCart(productId, quantity);
-  document.getElementById('productModal').classList.add('hidden');
+  showNotification('เพิ่มสินค้าในตะกร้าแล้ว');
 }
 
 function removeFromCart(productId) {
@@ -704,19 +550,17 @@ function removeFromCart(productId) {
   renderCartItems();
 }
 
-function updateCartQuantity(productId, change) {
+function updateQuantity(productId, change) {
   const item = cart.find(item => item.id === productId);
-  if (!item) return;
-
-  item.quantity += change;
-
-  if (item.quantity <= 0) {
-    removeFromCart(productId);
-    return;
+  if (item) {
+    item.quantity += change;
+    if (item.quantity <= 0) {
+      removeFromCart(productId);
+    } else {
+      updateCartDisplay();
+      renderCartItems();
+    }
   }
-
-  updateCartDisplay();
-  renderCartItems();
 }
 
 function updateCartDisplay() {
@@ -737,97 +581,116 @@ function renderCartItems() {
   const cartTotal = document.getElementById('cartTotal');
 
   if (cart.length === 0) {
-    cartItems.innerHTML = '<p class="text-gray-500 text-center py-8">ไม่มีสินค้าในตะกร้า</p>';
+    cartItems.innerHTML = '<p class="empty-cart">ไม่มีสินค้าในตะกร้า</p>';
     cartFooter.classList.add('hidden');
     return;
   }
 
-  const cartHTML = cart.map(item => `
+  cartItems.innerHTML = cart.map(item => `
     <div class="cart-item">
-      <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-lg">
-      <div class="flex-1 ml-4">
-        <h4 class="font-medium">${item.name}</h4>
-        <p class="text-sm text-gray-600">฿${item.price}/${item.unit}</p>
-        <div class="quantity-controls mt-2">
-          <button class="quantity-btn" onclick="updateCartQuantity(${item.id}, -1)">-</button>
-          <span class="px-3">${item.quantity}</span>
-          <button class="quantity-btn" onclick="updateCartQuantity(${item.id}, 1)">+</button>
+      <div class="cart-item-info">
+        <img src="${item.image}" alt="${item.name}">
+        <div class="cart-item-details">
+          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-price">฿${item.price}/${item.unit}</div>
         </div>
       </div>
-      <div class="text-right">
-        <p class="font-semibold">฿${item.price * item.quantity}</p>
-        <button onclick="removeFromCart(${item.id})"
-                class="text-red-500 hover:text-red-700 mt-2">
-          <i data-feather="trash-2" class="w-4 h-4"></i>
-        </button>
+      <div class="quantity-controls">
+        <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
+        <span class="quantity-display">${item.quantity}</span>
+        <button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button>
       </div>
     </div>
   `).join('');
 
-  cartItems.innerHTML = cartHTML;
-
   const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   cartTotal.textContent = `฿${total.toLocaleString()}`;
   cartFooter.classList.remove('hidden');
-
-  feather.replace();
 }
 
-function handleContactForm(e) {
-  e.preventDefault();
+function openProductModal(productId) {
+  const product = products.find(p => p.id === productId);
+  const productModal = document.getElementById('productModal');
+  const productModalContent = document.getElementById('productModalContent');
 
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData);
+  productModalContent.innerHTML = `
+    <div style="position: relative;">
+      <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 20rem; object-fit: cover;">
+      <div style="padding: 2rem;">
+        <div style="margin-bottom: 1rem;">
+          <span class="product-badge ${product.category}">${getCategoryLabel(product.category)}</span>
+        </div>
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #1f2937;">${product.name}</h2>
+        <p style="color: #6b7280; margin-bottom: 1.5rem; line-height: 1.6;">${product.description}</p>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <div class="rating-stars">
+            ${generateStars(product.rating)}
+          </div>
+          <span style="font-size: 0.875rem; color: #6b7280;">
+            ${product.rating} (${product.reviews} รีวิว)
+          </span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+          <div style="display: flex; align-items: baseline; gap: 0.25rem;">
+            <span style="font-size: 2rem; font-weight: 700; color: var(--organic-green-600);">฿${product.price}</span>
+            <span style="color: #6b7280;">/${product.unit}</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; color: #16a34a;">
+            <i data-feather="check-circle" style="width: 1rem; height: 1rem;"></i>
+            <span style="font-size: 0.875rem; font-weight: 500;">มีสินค้าพร้อมส่ง</span>
+          </div>
+        </div>
+        <button onclick="addToCart(${product.id}); document.getElementById('productModal').classList.add('hidden');"
+                style="width: 100%; background-color: var(--organic-green-600); color: white; font-weight: 500; padding: 1rem; border-radius: 0.5rem; border: none; cursor: pointer; font-size: 1.125rem; transition: background-color 0.3s ease;">
+          เพิ่มใส่ตะกร้า
+        </button>
+      </div>
+    </div>
+  `;
 
-  // Simulate form submission
-  showNotification('ข้อความของคุณถูกส่งแล้ว เราจะติดต่อกลับในเร็วๆ นี้');
-  e.target.reset();
+  productModal.classList.remove('hidden');
+
+  // Re-initialize Feather icons for the modal content
+  setTimeout(() => {
+    feather.replace();
+  }, 100);
 }
 
-function scrollToProducts() {
-  document.getElementById('products').scrollIntoView({
-    behavior: 'smooth'
-  });
-}
-
-function showNotification(message, type = 'success') {
+function showNotification(message) {
+  // Create notification element
   const notification = document.createElement('div');
-  notification.className = `notification ${type === 'success' ? 'border-green-500' : 'border-red-500'}`;
+  notification.className = 'notification';
   notification.innerHTML = `
-    <div class="flex items-center">
-      <i data-feather="${type === 'success' ? 'check-circle' : 'alert-circle'}"
-         class="w-5 h-5 ${type === 'success' ? 'text-green-500' : 'text-red-500'} mr-2"></i>
+    <div style="display: flex; align-items: center; gap: 0.5rem;">
+      <i data-feather="check-circle" style="width: 1.25rem; height: 1.25rem; color: var(--organic-green-600);"></i>
       <span>${message}</span>
     </div>
   `;
 
   document.body.appendChild(notification);
-  feather.replace();
 
   // Show notification
   setTimeout(() => {
     notification.classList.add('show');
   }, 100);
 
-  // Hide notification
+  // Hide and remove notification
   setTimeout(() => {
-    notification.classList.remove('show');
+    notification.classList.add('hide');
     setTimeout(() => {
       document.body.removeChild(notification);
     }, 300);
   }, 3000);
+
+  // Initialize Feather icons for notification
+  feather.replace();
 }
 
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
+function scrollToProducts() {
+  document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Initialize Feather icons when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  feather.replace();
 });
